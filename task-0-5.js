@@ -1,6 +1,5 @@
 function areaOfaTriangle(base,hight,length){
-    var area = 0;
-    return area;
-
+    var side = (base + hight + length) / 2;
+    return Math.sqrt(side * (side - base) * (side - hight) * (side - length));
 }
-areaOfaTriangle(4,4,8);
+areaOfaTriangle(3,4,5);
