@@ -1,10 +1,18 @@
-function getCommonCharactersOrLetters(strg1, strg2){
-    
-    let fullString = strg1 +" "+ strg2;
-    let commonRegex = /[oues]/gi; 
-    let result = fullString.match(commonRegex); 
+function getCommonCharactersOrLetters(str1, str2){
+   
+   str1 = str1.split('');
+   str2 = str2.split('');
 
-    console.log("Output: Common letters: " + result);
-    
+   const common = [];;
+   var i, j;
+   for (i = 0; i < str1.length; i++) {
+      for (j = i + 0; j < str2.length; j++) {
+         if(str1[i] == str2[j]){
+            common.push( str1[i]);
+         }
+      }
+   }
+   return common;
 }
 getCommonCharactersOrLetters("house", "computers");
+
