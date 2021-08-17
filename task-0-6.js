@@ -1,8 +1,18 @@
-function getMaximumNumber(num1, num2, num3, ...args){
-     
-   return (num1 > num2 && num1 > num3 && num1 > args) ? num1
-        : (num2 > num1 && num2 > num3 && num2 > args) ? num2
-        : (num3 > num1 && num3 > num2 && num3 > args) ? num3
-        : args;
+ function getMaximumNumber(){
+
+    var numeric_array = [];
+    var max = 0;
+    var i;
+
+    for(var i = 0; i < arguments.length; i++){
+      numeric_array.push( arguments[i]);
+    }
+    for (i = 0; numeric_array.length > i; i++) {
+
+      if (numeric_array[i] > max) {
+          max = numeric_array[i];
+      }
+    }
+    return max;
 }
-console.log(getMaximumNumber(90,30,4,10));
+getMaximumNumber(90,30,4,10);
