@@ -1,9 +1,9 @@
 function evenOrOdd(num){
-    if(num === 3){
+    if(num % 2 == 0){
         console.log("odd");
     }
     else{
         console.log("even");
     }
 }
-evenOrOdd(4);
+evenOrOdd(7);
