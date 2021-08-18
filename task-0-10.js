@@ -2,8 +2,7 @@ function getCommonCharactersOrLetters(str1, str2){
    
    str1 = str1.split('');
    str2 = str2.split('');
-
-   const common = [];;
+   var common = [];;
    var i, j;
    for (i = 0; i < str1.length; i++) {
       for (j = i + 0; j < str2.length; j++) {
@@ -12,7 +11,6 @@ function getCommonCharactersOrLetters(str1, str2){
          }
       }
    }
-   return common;
+   console.log("Common letters: " + common);
 }
 getCommonCharactersOrLetters("house", "computers");
-
