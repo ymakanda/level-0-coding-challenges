@@ -1,4 +1,4 @@
- function getMaximumNumber(){
+ function getMaxNumber(){
 
     var numeric_array = [];
     var max = arguments[0];
