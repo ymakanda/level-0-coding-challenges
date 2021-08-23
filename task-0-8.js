@@ -7,7 +7,7 @@ function convertAnyNumberIntoHoursAndMinutes(num){
       return  hour + " hour, " + minute + " minutes";
     }else if((hour == 1) && (minute == 1)){
       return  hour + " hour, " + minute + " minute";
-    }else if((hour == 2) && (minute == 1)){
+    }else { 
       return  hour + " hours, " + minute + " minute";
     }
 }
