@@ -1,13 +1,13 @@
  function getMaxNumber(){
 
-    var numericArray = [];
-    var max = arguments[0];
-    var i;
+    let numericArray = [];
+    let max = arguments[0];
+    
 
-    for(var i = 0; i < arguments.length; i++){
+    for(let i = 0; i < arguments.length; i++){
       numericArray.push( arguments[i]);
     }
-    for (i = 0; i < numericArray.length ; i++) {
+    for (let i = 0; i < numericArray.length ; i++) {
       if (numericArray[i] > max) {
           max = numericArray[i];
       }

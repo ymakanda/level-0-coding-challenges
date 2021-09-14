@@ -1,12 +1,11 @@
 function getVowelsInTheString(str){
 
-   var str = str.toLowerCase(str.split(''));
-   var vowels = 'aeiou'.split('');
-   var commonVowels = [];
-   var i, j;
-   for (i = 0; i < str.length; i++) {
-      for (j = 0; j < vowels.length; j++) {
-         if(str[i] === vowels[j]){
+   let strLower = str.toLowerCase(str.split(''));
+   let vowels = 'aeiou'.split('');
+   let commonVowels = [];
+   for (let i = 0; i < strLower.length; i++) {
+      for (let j = 0; j < vowels.length; j++) {
+         if(strLower[i] === vowels[j]){
             if (commonVowels.indexOf(vowels[j]) < 0){
                 commonVowels.push(vowels[j])
             }

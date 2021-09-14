@@ -1,6 +1,6 @@
 function convertAnyNumberIntoHoursAndMinutes(num){
-    var hour = Math.floor(num / 60);  
-    var minute = num % 60;
+    let hour = Math.floor(num / 60);  
+    let minute = num % 60;
     if((hour == 0 ) && (minute == 0)){
       return  hour + " hours, " + minute + " minutes";
     }else if((hour == 1) && (minute == 0)){
