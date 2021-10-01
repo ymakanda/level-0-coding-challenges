@@ -1,0 +1,26 @@
+{
+  "name": "level-0-coding-challenges",
+  "version": "1.0.0",
+  "description": "Tags algrithms clean-code Hard Prerequisites TOPICS: Honor Code PROJECTS: Git Basic Exercises Complete these tasks in the correct language. If you are here to learn JavaScript, do them in JavaScript. If you have been told to use Python then use Python.",
+  "main": "task-0-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymakanda/level-0-coding-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ymakanda/level-0-coding-challenges/issues"
+  },
+  "homepage": "https://github.com/ymakanda/level-0-coding-challenges#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.26.1"
+  }
+}
