@@ -4,7 +4,7 @@ function convertAnyNumberIntoHoursAndMinutes(num){
     let minute = num % 60;
     if((hour == 0 ) && (minute == 0)){
       return  hour + " hours, " + minute + " minutes";
-    }else if((hour == 1) && (minute == 0)){
+    }else if((hour == 1) && (minute == 0 ||minute >1 )){
       return  hour + " hour, " + minute + " minutes";
     }else if((hour == 1) && (minute == 1)){
       return  hour + " hour, " + minute + " minute";
@@ -16,6 +16,7 @@ function convertAnyNumberIntoHoursAndMinutes(num){
 }
 
 console.log(convertAnyNumberIntoHoursAndMinutes(0));
+console.log(convertAnyNumberIntoHoursAndMinutes(71));
 console.log(convertAnyNumberIntoHoursAndMinutes(60));
 console.log(convertAnyNumberIntoHoursAndMinutes(61));
 console.log(convertAnyNumberIntoHoursAndMinutes(121));
