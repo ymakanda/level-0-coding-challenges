@@ -4,7 +4,7 @@
   "description": "Tags algrithms clean-code Hard Prerequisites TOPICS: Honor Code PROJECTS: Git Basic Exercises Complete these tasks in the correct language. If you are here to learn JavaScript, do them in JavaScript. If you have been told to use Python then use Python.",
   "main": "task-0-1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ./" 
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,10 @@
   },
   "homepage": "https://github.com/ymakanda/level-0-coding-challenges#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.32.0",
-    "@typescript-eslint/parser": "^4.32.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.26.1"
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.26.1",
+    "typescript": "^4.4.3"
   }
 }

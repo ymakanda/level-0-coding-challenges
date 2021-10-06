@@ -1,3 +1,4 @@
+/*global console*/
 function convertAnyNumberIntoHoursAndMinutes(num){
     let hour = Math.floor(num / 60);  
     let minute = num % 60;
@@ -13,6 +14,7 @@ function convertAnyNumberIntoHoursAndMinutes(num){
       return  hour + " hours, " + minute + " minutes";
     }
 }
+
 console.log(convertAnyNumberIntoHoursAndMinutes(0));
 console.log(convertAnyNumberIntoHoursAndMinutes(60));
 console.log(convertAnyNumberIntoHoursAndMinutes(61));
