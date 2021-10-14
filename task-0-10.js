@@ -1,6 +1,5 @@
 /*global console*/
 function getCommonCharactersOrLetters(str1, str2){
-   // eslint-disable-line no-console
    str1 = str1.split('');
    str2 = str2.split('');
    let common = [];

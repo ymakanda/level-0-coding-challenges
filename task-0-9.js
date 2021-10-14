@@ -1,6 +1,5 @@
 /*global console*/
 function getVowelsInTheString(str){
-// eslint-disable-line no-console
    let strLower = str.toLowerCase(str.split(''));
    let vowels = 'aeiou'.split('');
    let commonVowels = [];
