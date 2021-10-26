@@ -1,28 +1,38 @@
 module.exports = {
-    "parserOptions": {
-        "browser": true,
-        "ecmaVersion": 2021,
-        "node": true
+  env: {
+    browser: true,
+    commonjs: true,
+    es2021: true,
+    node: true,
+  },
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+  ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
+    ecmaVersion: 12,
+  },
+  plugins: [
+    'react',
+  ],
+  rules: {
+    'no-console': 'off',
+    'no-mixed-operators': [
+      'error',
+      {
+        groups: [
+          ['+', '-', '*', '/', '%', '**'],
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof'],
+        ],
+        allowSamePrecedence: true,
+      },
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
-    "rules": {
-        "no-console": "off" //Disable for typescript
-    },
-  
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+  },
 };
