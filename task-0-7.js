@@ -1,5 +1,5 @@
 function temperatureInFahrenheit(celsius) {
-  return celsius * 9.0 / (5 + 32);
+  return ((celsius * 9.0) / 5) + 32;
 }
 temperatureInFahrenheit(34);
 
